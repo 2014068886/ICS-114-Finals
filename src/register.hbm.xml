@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.ust.user.Register" table="registration">  
+    <id name="id" type = "int">  
+    	<column name = "id"></column>
+    	<generator class="increment"></generator>
+    </id>   
+    <property name="fullname" type = "string">
+    	<column name = "fullname"> </column>
+    </property>  
+    <property name="username" type = "string">
+        <column name = "username"> </column>
+    </property>  
+    <property name="birthday" type = "string">
+        <column name = "birthday"> </column>
+    </property>      
+    <property name="age" type = "int">
+    	<column name="age"></column>
+    </property>
+    <property name="password" type = "string">
+    	<column name="password"></column>
+    </property>
+    <property name="status" type = "string">
+        <column name="status"></column>
+    </property>
+  </class>  
+            
+ </hibernate-mapping>  
